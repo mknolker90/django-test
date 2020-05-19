@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends "AppTwo/base.html" %}
+{% block body_block %}
+
+
+  <h1>
+
+
+    This is the welcome page
+    go to /users to sign up</h1>
+
+    <p>  {{text | upper }}
+      {{text | cut:'hello' }}
+      {{number | add:"99" }}</p>
+
+
+
+{% endblock%}

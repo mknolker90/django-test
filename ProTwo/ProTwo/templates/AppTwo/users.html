@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>User file </title>
+  </head>
+  <body>
+    <div class='container'>
+      <h1>Sign up here</h1>
+      <a href="{% url 'admin:index' %}">Link to main site</a>
+      <a href="{% url 'AppTwo:form_name_view' %}">Link to old site</a>
+      <form method="post">
+        {{ form.as_p}}
+        {% csrf_token %}
+        <input type="submit" value="submit">
+      </form>
+    </div>
+
+  </body>
+</html>
